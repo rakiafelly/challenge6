@@ -1,0 +1,11 @@
+<p>actor works!</p>
+
+<div *ngFor="let actor of listActors; let i=index">
+     <!-- {{article |json}}  -->
+     <h1>{{actor.firstname}} </h1>
+     <p>Contenu: {{actor.lastname}} </p>
+
+
+     <button type="button" class="btn btn_danger" (click)="deleteActor(i)">Supprimer</button>
+     <input type="chekbox" (click)="ajoutActor()">
+</div>
